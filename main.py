@@ -1,30 +1,16 @@
-import threading
-import input_handling
-stop_event = threading.Event()
-user_input = None
+import input_handling as ih
+import logging as lg
 
 
-
-
-def input_handler():
-    global user_input  # Globaale variable voor user inputs gebruiken
-    while not stop_event.is_set():
-        inp = input("Geef iets in: ")
-        if inp.strip().lower() == 'exit':
-            stop_event.set()  # Thread afsluiten bij het stop commando
-        else:
-            user_input = inp
-
-# Keyboard thread starten
-keyboardThread = threading.Thread(target=input_handler)
-keyboardThread.start()
 
 def Main():
-    global user_input  # Globaale variable voor user inputs gebruiken
-    while not stop_event.is_set():
-        if user_input:
-            print(f"Input testen: {user_input}")
-            user_input = None  #Input resetten na gebruik
+    while not ih.stop_event.is_set():
+        if ih.user_input:
+            print(f"Input testen: {ih.user_input}")
+            ih.user_input = None  # Reset input after processing
+        ih.threading.Event().wait(0.1)  # Small delay to prevent busy-waiting
 
 if __name__ == '__main__':
+    ih.start_input_thread()  # Start the input handling thread
     Main()
+    
