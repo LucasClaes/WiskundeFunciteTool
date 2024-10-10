@@ -1,10 +1,6 @@
 import threading
-import input_handling
 stop_event = threading.Event()
 user_input = None
-
-
-
 
 def input_handler():
     global user_input  # Globaale variable voor user inputs gebruiken
@@ -18,13 +14,3 @@ def input_handler():
 # Keyboard thread starten
 keyboardThread = threading.Thread(target=input_handler)
 keyboardThread.start()
-
-def Main():
-    global user_input  # Globaale variable voor user inputs gebruiken
-    while not stop_event.is_set():
-        if user_input:
-            print(f"Input testen: {user_input}")
-            user_input = None  #Input resetten na gebruik
-
-if __name__ == '__main__':
-    Main()
