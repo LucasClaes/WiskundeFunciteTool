@@ -6,6 +6,7 @@ def Main():
     while not ih.stop_event.is_set():
         if ih.user_input:
             print(f"Input testen: {ih.user_input}")
+            lg.log(f"Input: {ih.user_input}")
             ih.user_input = None  # User inputs na gebruik resetten
         ih.threading.Event().wait(0.1)  # Delay om thread niet te overbelasten
 
