@@ -1,4 +1,0 @@
-Log gestart op: 2024-10-16 21:40:09
-2024-10-16 21:40:10 - Input: t
-2024-10-16 21:40:10 - Ingegeven functie was niet geldig
-2024-10-16 21:40:12 - 
