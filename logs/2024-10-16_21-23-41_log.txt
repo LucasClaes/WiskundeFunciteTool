@@ -1,9 +1,0 @@
-Log gestart op: 2024-10-16 21:23:41
-2024-10-16 21:23:44 - Input: test
-2024-10-16 21:23:44 - SympifyError: "cannot sympify object of type <class 'sympy.core.cache.lazy_function.<locals>.LazyFunction'>"
-2024-10-16 21:23:48 - Input: ax+b
-2024-10-16 21:23:48 - name 'ax' is not defined
-2024-10-16 21:23:54 - Input: a*x + b
-2024-10-16 21:23:54 - name 'a' is not defined
-2024-10-16 21:24:07 - Input: 10*x + b
-2024-10-16 21:24:07 - name 'b' is not defined

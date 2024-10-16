@@ -1,5 +1,0 @@
-Log gestart op: 2024-10-16 21:15:58
-2024-10-16 21:16:00 - Input: f
-2024-10-16 21:16:00 - name 'f' is not defined
-2024-10-16 21:16:18 - Input: f
-2024-10-16 21:16:18 - name 'f' is not defined

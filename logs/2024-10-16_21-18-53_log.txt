@@ -1,5 +1,0 @@
-Log gestart op: 2024-10-16 21:18:53
-2024-10-16 21:18:58 - Input: 2x+5
-2024-10-16 21:18:58 - invalid decimal literal (<string>, line 1)
-2024-10-16 21:19:04 - Input: 2*x+5
-2024-10-16 21:19:04 - Nulwaarde(s): [-5/2]
