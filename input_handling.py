@@ -6,7 +6,7 @@ user_input = None
 def input_handler():
     global user_input  # Globale variable voor user inputs
     while not stop_event.is_set():
-        inp = input("Geef iets in: ")
+        inp = input()
         if inp.strip().lower() == 'exit':
             stop_event.set()  # Exit commando om thread af te sluiten
         else:
